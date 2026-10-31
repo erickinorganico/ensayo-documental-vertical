@@ -1,6 +1,68 @@
-# Ensayo documental vertical
+# Estilos audiovisuales · Pensamientos Inorgánicos
 
-Skill de edición de video-ensayo 9:16 para HyperFrames: montaje de archivo, tipografía a la voz, collage, documentos resaltados, subtítulos y grade documental.
+Dos estilos de edición conservados por separado para Codex y Claude. **El estilo cinematográfico Dune v4 fue aprobado por Erick el 31/oct/2026 para sus videos serios**, incluyendo guion, audiovisual y música.
+
+| Petición | Entrada |
+|---|---|
+| «Como Dune», «ensayo serio cinematográfico» | [pi-ensayo-cinematografico](skills/pi-ensayo-cinematografico/SKILL.md) · Tesseract + HyperFrames + ElevenLabs |
+| «Como el café», «Wikimedia Vertical» | [ensayo-documental-vertical](SKILL.md) · tratamiento original 9:16 |
+
+El nuevo estilo mantiene Montserrat Black900 real, apertura typewriter a voz, clips variados, escenas nativas Tesseract integradas en movimiento, texto detrás de sujetos mediante máscaras móviles, atmósfera/grano/partículas selectivas, SFX con intención y música subordinada a la locución. No importa las notificaciones ni las tarjetas pastel del café.
+
+## Estilo cinematográfico aprobado
+
+- [Dirección y flujo](skills/pi-ensayo-cinematografico/references/DIRECCION-Y-FLUJO.md): guion, tesis, storyboard, coordinación Codex/Claude y decisiones humanas.
+- [Recetas visuales](skills/pi-ensayo-cinematografico/references/RECETAS-VISUALES.md): tipografía, oclusión, profundidad, texturas y partículas.
+- [Recetas de audio](skills/pi-ensayo-cinematografico/references/RECETAS-AUDIO.md): voz única, muestra musical aprobada real, continuación/crossfade, ducking y efectos.
+- [Render y recuperación](skills/pi-ensayo-cinematografico/references/RENDER-Y-RECUPERACION.md): segmentación, raíz ligera, mezcla aparte y límites comprobados.
+- [QA y aceptación](skills/pi-ensayo-cinematografico/references/QA-Y-ACEPTACION.md): revisión real del MP4 y límites de la referencia.
+- [Manifiesto aprobado](skills/pi-ensayo-cinematografico/references/DUNE-V4-APROBADO.json), [archivo/dependencias](skills/pi-ensayo-cinematografico/references/ARCHIVO-Y-DEPENDENCIAS.md), [brief reutilizable](skills/pi-ensayo-cinematografico/assets/brief.json) y [código real seleccionado](examples/dune-v4/README.md).
+
+### Instalar la nueva skill
+
+Con Python3, desde el clon:
+
+```powershell
+# Instalación por proyecto para ambos agentes:
+python scripts/install_style.py
+
+# O instalación a nivel usuario, con los perfiles existentes:
+python scripts/install_style.py --target "$env:USERPROFILE/.codex/skills/pi-ensayo-cinematografico" --target "$env:USERPROFILE/.claude/skills/pi-ensayo-cinematografico" --target "$env:USERPROFILE/.claude-cliente/skills/pi-ensayo-cinematografico"
+```
+
+El script conserva otras skills y rehúsa sobrescribir archivos divergentes; `--update` respalda los cambios previos de esta skill antes de reemplazarlos. No crea perfiles ni cambia autenticación/modelos. Para macOS/Linux, usar `--target ~/.codex/skills/pi-ensayo-cinematografico --target ~/.claude/skills/pi-ensayo-cinematografico`. La ruta Cliente sólo aplica si ya existe ese perfil.
+
+Montserrat Black900 y su OFL se incluyen con la skill en `assets/fonts/`; copiar ambos juntos al proyecto. Los medios y bancos particulares se resuelven por manifiesto, no por una descarga de película.
+
+Invocar en Codex `$pi-ensayo-cinematografico` o en Claude `/pi-ensayo-cinematografico`. Si el catálogo aún no refresca, pedir leer directamente su SKILL.md.
+
+```text
+Haz este ensayo serio con pi-ensayo-cinematografico, como Dune v4 aprobado.
+Expediente: [ruta]. Guion: [ruta]. Voz aprobada: [ruta y hash].
+Conserva su gramática Tesseract + HyperFrames, Montserrat Black y diseño
+sonoro cinematográfico; adapta las metáforas y música al tema.
+Reutiliza medios aprobados y las autorizaciones de esta pieza.
+```
+
+### Verificar y archivar
+
+```powershell
+python scripts/verify_style.py
+# Verificación de binarios en el equipo original:
+python scripts/verify_style.py --dossier "RUTA/claude-dune-20261030"
+# Congelar código/índice privados en una carpeta NUEVA:
+python scripts/archive_reference.py --dossier "RUTA/claude-dune-20261030" --out "RUTA-PRIVADA-NUEVA"
+```
+
+`scripts/render_jobs.py PLAN.json` permite ejecutar trabajos locales explícitos con huellas de contenido, control de salida/frames/decode y lock. `--dry-run` calcula huellas sin renderizar. Es una mejora del control de reanudación para piezas futuras; no ejecuta automáticamente el código histórico de Dune. Declarar todas las entradas transitivas (o directorios de assets/compositions sin salidas) y fijar comando/versiones. Las salidas obsoletas se conservan para conciliación; no hay reintento automático.
+
+El repo público no incorpora película, soundtrack ajeno, voz, credenciales ni transcripciones de sesiones. Los medios aprobados se conservan en el expediente local y sus hashes permiten comprobarlos. La música de Dune es original generada con ElevenLabs; las referencias se analizaron localmente para describir carácter, sin subirlas como audio-conditioning. Repetir un prompt no garantiza el mismo audio: la reproducción exacta usa los archivos aceptados.
+
+Las recetas documentan el resultado aprobado y sus límites técnicos. No prometen que un video nuevo se apruebe sin revisión ni que una instalación genere automáticamente el video. No se asigna una licencia nueva a recursos ajenos.
+
+## Estilo café original
+
+Skill de edición de video-ensayo9:16 para HyperFrames: montaje de archivo, tipografía a la voz, collage, documentos resaltados, subtítulos y grade documental. Las instrucciones siguientes describen **sólo el café**.
 
 ## Contenido
 

@@ -1,0 +1,20 @@
+{
+  "style": "pi-ensayo-cinematografico",
+  "style_version": "1.0.0",
+  "reference": "Dune-v5-HyperFrames-v4",
+  "piece_id": null,
+  "existing_dossier": null,
+  "existing_studio_json": null,
+  "thesis": null,
+  "sources": [],
+  "script": {"file": null, "sha256": null, "status": "pending", "preserve_literal": true},
+  "voice": {"file": null, "sha256": null, "reuse_approved": true, "new_generation_authorized": false, "alignment": null},
+  "format": {"aspect": "16:9", "width": 1920, "height": 1080, "fps": 30, "duration_from_audio": true},
+  "typography": {"family": "Montserrat", "weight": 900, "file": null, "license": null},
+  "visual": {"tesseract_scenes": [], "hyperframes_editable": null, "occlusion_beats": [], "particle_windows": [], "repetition_review": null, "forbidden": ["desktop_or_mobile_notifications", "unmotivated_pastel_gradient_cards"]},
+  "music": {"approved_sample": null, "approved_sample_sha256": null, "approval_record": null, "bed": null, "bed_sha256": null, "reference_analysis": [], "reference_uploaded": false, "new_generation_authorized": false, "replace_previous_bed": true},
+  "audio": {"voice_priority": true, "ducking_measured_per_piece": true, "true_peak_target_dbtp": -1.0, "sfx_cues": []},
+  "render": {"engine": "HyperFrames", "tested_reference_version": "0.8.223", "segmented": true, "input_fingerprints_required": true},
+  "authorization": {"produce": false, "publish": false, "schedule": false, "paid_media": false},
+  "qa": {"visual_samples": [], "audio_review": null, "measurements": null, "final_hash": null, "human_approval": null}
+}

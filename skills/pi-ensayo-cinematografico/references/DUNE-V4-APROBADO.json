@@ -1,0 +1,149 @@
+{
+  "style": "pi-ensayo-cinematografico",
+  "version": "1.0.0",
+  "approval_date": "2026-10-31",
+  "timezone": "America/Tijuana",
+  "approval_scope": "Dune v5 HyperFrames v4: guion, audiovisual, musica; referencia para videos serios de PI",
+  "human_quote": "ME ENCANTÓ! Finalmente el video perfecto tanto en guion, audiovisual, musica, etc.",
+  "preserved_files": [
+    {
+      "path": "produccion-hyperframes-v2/renders/Dune-v5-HyperFrames-v4.mp4",
+      "sha256": "fac351572ac33b6d4fdaacef7811ea181762c588d4fd093d9f93f74a68233da8",
+      "bytes": 377445479
+    },
+    {
+      "path": "voz-v5-v4/assets/voz-erick-original.mp3",
+      "sha256": "92579c5e585bce8aef29bcc2e1b8f2801a24f673eb9db25d39d84e8e4520411f",
+      "bytes": 7709300
+    },
+    {
+      "path": "musica-elevenlabs-r2/DUNE-r2-vocal-muestra45s.mp3",
+      "sha256": "c2c253851bae6843a8d97c48a7535137c67625fdf6842801ea5d856f21c90446",
+      "bytes": 1081772
+    },
+    {
+      "path": "musica-elevenlabs-r2/music__20261031_110232.mp3",
+      "sha256": "0395ded1075db20c144b6c7ecb8badca719eaff4b6e966371bedbac3a1c5c32e",
+      "bytes": 1080620
+    },
+    {
+      "path": "musica-elevenlabs-r2/music__20261031_112450.mp3",
+      "sha256": "16305b611d6741c8fd8125074c735f80a0c71bb458b19a29d18e651c1a8b047b",
+      "bytes": 11760812
+    },
+    {
+      "path": "musica-elevenlabs-r2/DUNE-r2-completa-cama490s.wav",
+      "sha256": "4a2c5fc64e0a8362ba447f2935558996e750c15322a53ed0c5d14dcc31de9c71",
+      "bytes": 141120102
+    },
+    {
+      "path": "produccion-hyperframes-v2/assets/fonts/Montserrat-Black.ttf",
+      "sha256": "ea67b37f8776eebea135cd1fe9adeaf6f9427683e8dc11ab8398b6be5f102c60",
+      "bytes": 462844
+    },
+    {
+      "path": "produccion-hyperframes-v2/assets/fonts/OFL-Montserrat.txt",
+      "sha256": "8b7141c03fa4f8d44e6345d5d4931709290f0f67875e452e95ac1fd3a027802e",
+      "bytes": 4400
+    },
+    {
+      "path": "produccion-hyperframes-v2/index.html",
+      "sha256": "2193cc060b6b730eba5cb2c3d895b8e798a3ab0859d6d575a30e96357223f1cc",
+      "bytes": 39346
+    },
+    {
+      "path": "produccion-hyperframes-v2/renders/QA-HF-v4.json",
+      "sha256": "d53ffa458162b49ebcb237ca47cea42dc4dabccaa233f7528e56fa3e2355325e",
+      "bytes": 1212
+    }
+  ],
+  "measurements": {
+    "mp4": "renders/Dune-v5-HyperFrames-v4.mp4",
+    "ganancia_master_dB": 1.1,
+    "mezcla_hf_LUFS": -15.1,
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1"
+      },
+      {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "duracion": 488.4,
+    "bytes": 377445479,
+    "LUFS_I": -14.0,
+    "LRA": 2.0,
+    "true_peak_dBTP": -0.8,
+    "negros_>0.4s": [
+      [
+        "11.866667",
+        "12.366667"
+      ],
+      [
+        "107.966667",
+        "108.6"
+      ],
+      [
+        "207.933333",
+        "208.533333"
+      ],
+      [
+        "221.2",
+        "221.666667"
+      ]
+    ],
+    "errores_decodificacion": "",
+    "sha256": "fac351572ac33b6d4fdaacef7811ea181762c588d4fd093d9f93f74a68233da8",
+    "voz_sobre_resto_dB_en_habla": {
+      "mediana": 14.1,
+      "p10": 10.0,
+      "p90": 18.3,
+      "ventanas": 263
+    },
+    "nivel_resto_en_grito_lisan_dBFS_rms": -19.7,
+    "alineacion_lag_muestras_16k": 0,
+    "ganancia_voz_estimada": 1.214,
+    "metodo_relacion": "residuo offline = mezcla HF menos voz colocada y alineada por correlación; sin render extra",
+    "notificaciones_en_fuentes": 0,
+    "musica": "assets/musica/dune-r2-cama490s.wav (aprobada r2) única pista musical"
+  },
+  "versions_observed": {
+    "hyperframes": "0.8.223",
+    "tesseract": "0.4.0",
+    "tts_model": "eleven_v4",
+    "music_model": "music_v2"
+  },
+  "music": {
+    "sample_real_seconds": [
+      0,
+      40
+    ],
+    "crossfade_seconds": [
+      40,
+      45
+    ],
+    "bed_seconds": 490,
+    "reference_uploaded": false,
+    "conditioning": "local analysis informed textual prompt",
+    "ducking_for_this_bed_only": {
+      "speech": 0.22,
+      "pause": 0.9,
+      "pivot": 0.05,
+      "dialogue": 0.03
+    }
+  },
+  "media_in_public_repo": "Montserrat Black and OFL only; no film, narration or music",
+  "limits": [
+    "Approximate within-phrase timing, no completed ASR alignment",
+    "Three clipped samples in long music source, attenuation cannot restore them",
+    "Final true peak -0.8 exceeds original -1 target by 0.2dB",
+    "Trailer dark intervals retained; no continuous frame-by-frame human inspection claimed",
+    "Third-party movie clips not licensed CC or certified fair use"
+  ]
+}

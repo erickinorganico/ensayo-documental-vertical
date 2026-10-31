@@ -1,0 +1,33 @@
+{
+  "context": "historical implementation, requires original project inputs; not standalone renderer",
+  "files": [
+    {
+      "path": "particulas.py",
+      "source_relative_to_dossier": "produccion-hyperframes-v2/herramientas/particulas.py",
+      "source_sha256": "79a3a5f49a2f48b9b0e4c48e0d8a9e0712de292e3054e507c61e161f6b976ad5",
+      "normalization": "CRLF to LF only",
+      "sha256": "d6aa60db0cb1bfdf4a1942a1de640df1b6c02567dd4daec162a4e13b34586f86"
+    },
+    {
+      "path": "segmentar.py",
+      "source_relative_to_dossier": "produccion-hyperframes-v2/herramientas/segmentar.py",
+      "source_sha256": "c0baec18d45a7f9fdb8d937a1f73baef62046e2ee22631e5c30b2fefc5b81970",
+      "normalization": "CRLF to LF only",
+      "sha256": "faff5d13bcb9858e6806e7aeea9b462ceee0abce527799f12d2e44535351e913"
+    },
+    {
+      "path": "render-v4.ps1",
+      "source_relative_to_dossier": "produccion-hyperframes-v2/herramientas/render-v4.ps1",
+      "source_sha256": "bb23233069601134a76af9e45c53f39dd4060beb763b62d573fe3a1b053924bd",
+      "normalization": "CRLF to LF only",
+      "sha256": "bb23233069601134a76af9e45c53f39dd4060beb763b62d573fe3a1b053924bd"
+    },
+    {
+      "path": "ensamblar_v4.py",
+      "source_relative_to_dossier": "produccion-hyperframes-v2/herramientas/ensamblar_v4.py",
+      "source_sha256": "585f40e24aa420037a08d8d4f4b70785cc5d8fb0993b637fdfe0ed16c4038af8",
+      "normalization": "CRLF to LF only",
+      "sha256": "8db2ec620f53a2bf0a7b2814da2d8e2f4be8a72851278bf8ab1f01ade58fbc1d"
+    }
+  ]
+}
