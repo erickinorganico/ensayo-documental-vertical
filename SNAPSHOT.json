@@ -1,0 +1,20 @@
+{
+  "snapshot_date": "2026-10-30",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "900359b71deb0b3bee23e722b0c0df84b7fdc71b7feff75e84c0e36417af7931",
+      "source_identical": true
+    },
+    {
+      "path": "plantillas/grade-documental.json",
+      "sha256": "4d8fce12e6f7f2b819567cbca13e9aa207d022b189483d9f87772dee0299f6d8",
+      "source_identical": true
+    },
+    {
+      "path": "plantillas/kit.css.html",
+      "sha256": "70e26b00db113bd5facf2b78413c109e5cfaaf1a808cd6e1ab091b1c512f4748",
+      "source_identical": true
+    }
+  ]
+}
